@@ -1,0 +1,17 @@
+---
+resources:
+- name: boot-helloworld
+  type: git
+  source:
+    uri: https://github.com/schabiyo/boot-helloworld.git
+
+    branch: master
+
+jobs:
+- name: unit-test
+  plan:
+  - get: boot-helloworld
+
+  - task: tests
+    file: boot-helloworld/ci/tasks/unit-test.yml
+

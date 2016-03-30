@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image: docker:///java#8
+
+params:
+  MAVEN_OPTS:
+  MAVEN_CONFIG:
+
+inputs:
+  - name: boot-helloworld
+
+run:
+  path: boot-helloworld/ci/tasks/unit-test.sh
+  args: [
+    --input-dir, boot-helloworld
+  ]
