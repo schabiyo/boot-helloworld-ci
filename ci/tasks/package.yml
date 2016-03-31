@@ -19,5 +19,4 @@ run:
     --input-dir, boot-helloworld,
     --output-dir, package,
     --artifactId, boot-helloworld,
-    --packaging, jar
   ]
