@@ -1,6 +1,6 @@
 # boot-helloworld-ci
 
 
-Basic concouse pipline with Spring Boot
+Demonstration of a basic concourse pipeline with a Spring Boot App
 
 
