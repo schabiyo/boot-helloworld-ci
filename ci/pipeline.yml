@@ -35,5 +35,9 @@ jobs:
   - task: package
     file: boot-helloworld/ci/tasks/package.yml
   - put: pcfdev
+    attempts: 10
+    params:
+      manifest: package/manifest.yml
+      current_app_name: boot-helloworld
 
 
