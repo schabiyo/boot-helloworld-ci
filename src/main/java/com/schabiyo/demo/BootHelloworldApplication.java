@@ -12,7 +12,7 @@ public class BootHelloworldApplication {
 	
 	@RequestMapping("/")
 	public String sayHello(){
-		return "Hello from Spring Boot";
+		return "Hello from Spring Boot V2";
 	}
 
 	public static void main(String[] args) {
