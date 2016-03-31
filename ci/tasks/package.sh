@@ -28,7 +28,7 @@ done
 artifactName="${artifactId}-0.0.1-SNAPSHOT.jar"
 
 cd $inputDir
-./mvnw clean package -Pci -DversionNumber=$version
+./mvnw clean package -DversionNumber=$version
 
 # Copy jar file to concourse output folder
 cd ..
