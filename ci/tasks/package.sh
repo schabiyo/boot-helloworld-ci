@@ -25,12 +25,12 @@ while [ $# -gt 0 ]; do
 done
 
 
-artifactName="${artifactId}.jar"
+artifactName="${artifactId}-0.0.1-SNAPSHOT.jar"
 
 cd $inputDir
 ./mvnw clean package -Pci -DversionNumber=$version
 
-# Copy war file to concourse output folder
+# Copy jar file to concourse output folder
 cd ..
 
 cp $inputDir/manifest.yml package/manifest.yml
