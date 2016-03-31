@@ -34,4 +34,4 @@ cd $inputDir
 cd ..
 
 cp $inputDir/manifest.yml package/manifest.yml
-cp $inputDir/target/$artifactName $outputDir/$artifactName
+cp $inputDir/target/$artifactName package/$artifactName

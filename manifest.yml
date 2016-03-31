@@ -1,3 +1,4 @@
 ---
 applications:
 - name: boot-helloworld
+  path: ./boot-helloworld-0.0.1-SNAPSHOT.jar
