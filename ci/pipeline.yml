@@ -4,14 +4,36 @@ resources:
   type: git
   source:
     uri: https://github.com/schabiyo/boot-helloworld.git
-
     branch: master
 
+- name: pcfdev
+  type: cf
+  source:
+    api: api.local.pcfdev.io
+    username: admin
+    password: admin
+    organization: pcfdev-org
+    space: pcfdev-space
+    skip_cert_check: true
+
+
 jobs:
+
 - name: unit-test
   plan:
   - get: boot-helloworld
-
+    trigger: true
   - task: tests
     file: boot-helloworld/ci/tasks/unit-test.yml
+
+
+- name: deploy
+  plan:
+  - get: boot-helloworld
+    passed: [ unit-test ]
+    trigger: true
+  - task: package
+    file: boot-helloworld/ci/tasks/package.yml
+  - put: pcfdev
+
 

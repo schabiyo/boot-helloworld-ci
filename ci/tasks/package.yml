@@ -9,17 +9,13 @@ params:
 
 inputs:
   - name: boot-helloworld
-  - name: version
 
 outputs:
-  - name: build
+  - name: package
 
 run:
   path: boot-helloworld/ci/tasks/package.sh
   args: [
     --input-dir, boot-helloworld,
-    --output-dir, build,
-    --version-file, version/number,
-    --artifactId, boot-helloworld,
-    --packaging, jar
+    --output-dir, package,
   ]
