@@ -3,7 +3,7 @@
 
 Demonstration of a basic concourse pipeline with a Spring Boot App localy on your laptop/Desktop
 
-![alt text](/doc/scree.png "Title")
+![Pipeline](/doc/scree.png "Pipeline")
 
 ### Step 1 - Install concourse
 
@@ -11,7 +11,7 @@ Demonstration of a basic concourse pipeline with a Spring Boot App localy on you
 
 ` $ vagrant up                  # downloads the box and spins up the VM `
 
-## Step 2 - Download the fly CLI
+### Step 2 - Download the fly CLI
 
 TODO
 
