@@ -5,7 +5,7 @@ Demonstration of a basic concourse pipeline with a Spring Boot App localy on you
 
 ![alt text](/doc/scree.png "Title")
 
-## Step 1 - Install concourse
+### Step 1 - Install concourse
 
 ` $ vagrant init concourse/lite # creates ./Vagrantfile `
 
@@ -15,19 +15,21 @@ Demonstration of a basic concourse pipeline with a Spring Boot App localy on you
 
 TODO
 
-## Step 3 - Target the concourse instance 
+### Step 3 - Target the concourse instance 
 
 ` $ fly -t myci login -c http://192.168.100.4:8080 `
 
-## Step 4 - Install PCF Dev
+### Step 4 - Install PCF Dev
 
 TODO
 
-## Step 5 - Clone the Github repo
+### Step 5 - Clone the Github repo
 
 TODO
 
-## Step 6 - Trigger a build.
+### Step 6 - Trigger a build.
+
+` $ ./fly -t myci set-pipeline -p boot-helloworld -c boot-helloworld-ci/ci/pipeline.yml `
 
 TODO
 
