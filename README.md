@@ -6,9 +6,9 @@ Demonstration of a basic concourse pipeline with a Spring Boot App localy on you
 
 ## Step 1 - Install concourse
 
-` vagrant init concourse/lite # creates ./Vagrantfile `
+` $ vagrant init concourse/lite # creates ./Vagrantfile `
 
-` vagrant up                  # downloads the box and spins up the VM `
+` $ vagrant up                  # downloads the box and spins up the VM `
 
 ## Step 2 - Download the fly CLI
 
@@ -16,7 +16,7 @@ TODO
 
 ## Step 3 - Target the concourse instance 
 
-TODO
+` $ fly -t myci login -c http://192.168.100.4:8080 `
 
 ## Step 4 - Install PCF Dev
 
