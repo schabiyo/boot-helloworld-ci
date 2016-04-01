@@ -6,13 +6,14 @@ Demonstration of a basic concourse pipeline with a Spring Boot App localy on you
 
 ## Step 1 - Install concourse
 
-TODO
+` vagrant init concourse/lite # creates ./Vagrantfile `
+` vagrant up                  # downloads the box and spins up the VM `
 
 ## Step 2 - Download the fly CLI
 
 TODO
 
-## Step 3 - Target our concourse instance 
+## Step 3 - Target the concourse instance 
 
 TODO
 
