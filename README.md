@@ -6,7 +6,7 @@ Demonstration of a basic concourse pipeline with a Spring Boot App localy on you
 
 ## Step 1 - Install concourse
 
-` vagrant init concourse/lite # creates ./Vagrantfile `
+<p>` vagrant init concourse/lite # creates ./Vagrantfile ` </p>
 ` vagrant up                  # downloads the box and spins up the VM `
 
 ## Step 2 - Download the fly CLI
