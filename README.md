@@ -3,7 +3,7 @@
 
 Demonstration of a basic concourse pipeline with a Spring Boot App localy on your laptop/Desktop
 
-![alt text](doc/screen.png "Title")
+![alt text](/doc/screen.png "Title")
 
 ## Step 1 - Install concourse
 
