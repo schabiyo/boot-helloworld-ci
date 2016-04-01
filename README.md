@@ -15,14 +15,15 @@ Step 3 - Target our concourse instance
 
 Step 4 - Install PCF Dev
 
+TODO
 
-Step 5 - Clone 
+Step 5 - Clone the Github repo
 
+TODO
 
+Step 6 - Trigger a build.
 
-Step 4 - Trigger a build.
-
-
+TODO
 
 
 
